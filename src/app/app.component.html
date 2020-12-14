@@ -1,0 +1,10 @@
+
+<h1>Lab</h1>
+
+<button (click)="rs.emmitValue()">Emit</button>
+
+<app-reactive></app-reactive>
+
+<button (click)="open = !open">{{open}}</button>
+
+<app-reactive *ngIf="open"></app-reactive>
