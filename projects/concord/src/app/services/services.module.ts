@@ -1,12 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import { DispatcherService } from './dispatcher.service';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+providers:[DispatcherService]
 })
 export class ServicesModule { }

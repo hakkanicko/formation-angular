@@ -3,9 +3,7 @@ import { BehaviorSubject, Observable, of as ObservableOf } from "rxjs";
 import { CnAction } from "./interfaces/cn-action";
 import { CnDispatcher } from "./interfaces/cn-dispatcher";
 
-@Injectable({
-  providedIn: "root",
-})
+@Injectable()
 export class DispatcherService implements CnDispatcher {
   state$ = new BehaviorSubject({});
 
