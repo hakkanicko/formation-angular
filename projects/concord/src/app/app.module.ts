@@ -1,25 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ServicesModule } from './services/services.module';
-import { ContainersModule } from './containers/containers.module';
-import { LayoutDefaultComponent } from './layouts/layout-default/layout-default.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { ServicesModule } from "./services/services.module";
+import { ContainersModule } from "./containers/containers.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutDefaultComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ServicesModule,
-    ContainersModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, ServicesModule, ContainersModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [LayoutDefaultComponent]
+  exports: [],
 })
-export class AppModule { }
+export class AppModule {}

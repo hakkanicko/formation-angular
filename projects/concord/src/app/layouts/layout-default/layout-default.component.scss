@@ -1,0 +1,24 @@
+header {
+  background-color: cornflowerblue;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 15vh;
+}
+
+main {
+  color: darkslategray;
+  display: block;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+footer {
+  background-color: darkslategray;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 10vh;
+}
