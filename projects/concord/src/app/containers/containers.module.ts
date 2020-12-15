@@ -7,5 +7,6 @@ import { ConDefaultModule } from "./con-default/con-default.module";
 @NgModule({
   declarations: [],
   imports: [CommonModule, LayoutsModule, ComponentsModule, ConDefaultModule],
+  exports: [ConDefaultModule]
 })
 export class ContainersModule {}
