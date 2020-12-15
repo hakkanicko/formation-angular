@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ReactiveModule } from './reactive/reactive.module';
+import { AnyModule } from 'projects/any/src/public-api';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ReactiveModule } from './reactive/reactive.module';
   ],
   imports: [
     BrowserModule,
-    ReactiveModule
+    ReactiveModule,
+    AnyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
