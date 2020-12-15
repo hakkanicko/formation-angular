@@ -9,11 +9,4 @@ import { CnActionTypes } from "./services/enum/cn-action-types.enum";
 })
 export class AppComponent {
   constructor(public dispatcher: DispatcherService) {}
-
-  testUserLogin() {
-    this.dispatcher.dispatch({type: CnActionTypes.USER_LOGIN, payload: 'Bob'});
-  }
-  testServeyTake() {
-    this.dispatcher.dispatch({type: CnActionTypes.SURVEY_TAKE});
-  }
 }
