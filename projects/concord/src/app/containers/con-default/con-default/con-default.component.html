@@ -7,6 +7,9 @@
     quisquam minima culpa illo animi, libero eos numquam ipsum.</app-comp-text
   >
 
+  <any-card *ngFor="let card of cards" [content]="card"> </any-card>
+
+
   <hr />
   <app-comp-button type="validation">Valider</app-comp-button>
   <app-comp-button type="configuration">Configurer</app-comp-button>

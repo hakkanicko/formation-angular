@@ -1,1 +1,19 @@
-<p>card works!</p>
+<mat-card>
+  <mat-card-header *ngIf="content.header">
+    <mat-card-title>{{ content.header.title }}</mat-card-title>
+    <mat-card-subtitle *ngIf="content.header.subtitle">{{
+      content.header.subtitle
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image *ngIf="content.image" [src]="content.image" alt="image" />
+  <mat-card-content
+    ><p>
+      {{ content.text }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="content.actions && content.actions.length > 0">
+    <button mat-button *ngFor="let item of content.actions" (click)="dispatcher.dispatch(item.action)">
+      {{ item.label }}
+    </button>
+  </mat-card-actions>
+</mat-card>
